@@ -27,7 +27,18 @@ export function Terminal() {
 
     return (
         <StyledTerminalContainer>
-            <StyledTerminal commands={commands} theme="material-dark" welcomeMessage="Hello" />
+            <StyledTerminal
+                commands={commands}
+                theme="my-custom-theme"
+                themes={{
+                    'my-custom-theme': {
+                        themeBGColor: 'rgba(255, 255, 255, 0.05)',
+                        themeToolbarColor: 'rgba(0, 0, 0, 0.05)',
+                        themeColor: '#FFFEFC',
+                        themePromptColor: 'rgba(145, 255, 133, 0.694)'
+                    }
+                }}
+            />
         </StyledTerminalContainer>
     );
 }

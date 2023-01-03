@@ -2,7 +2,7 @@ import { ReactTerminal } from 'react-terminal';
 import styled from 'styled-components';
 
 export const StyledTerminalContainer = styled.div`
-    width: 50%;
+    width: 40%;
     height: 500px;
 `;
 
